@@ -1,10 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "SP_Wall",
+    "path": "sprites/SP_Wall/SP_Wall.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "OB_World",
+    "path": "objects/OB_World/OB_World.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,11 +30,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "0_Base",
-    "path": "folders/01_Engine/World/0_Base.yy",
+    "name": "05_MapEditor",
+    "path": "folders/05_MapEditor.yy",
   },
   "resourceVersion": "1.0",
-  "name": "OB_World",
+  "name": "OB_Wall",
   "tags": [],
   "resourceType": "GMObject",
 }

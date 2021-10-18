@@ -1,10 +1,10 @@
-function F_World_Init()
+function F_Wall_Init()
 {
 	//  Basic Information
-	V_World_Info_Name												= "World Object"
-	V_World_Info_Description											= "A basic object that exists in the world"
+	V_World_Info_Name												= "Wall"
+	V_World_Info_Description											= "A solid block"
 	
-	V_World_Sprite														= SP_NULL
+	V_World_Sprite														= SP_Wall
 	
 	
 	// Stats
@@ -22,8 +22,8 @@ function F_World_Init()
 
 	// Init the various attributes of the solid object
 	V_World_Is_Standable												= true
-	V_World_Is_ClimbUpable											= true
-	V_World_Is_DropDownable										= true
+	V_World_Is_ClimbUpable											= false
+	V_World_Is_DropDownable										= false
 	
 	V_World_Is_PhysProp												= false
 	V_World_Is_Breakable												= false

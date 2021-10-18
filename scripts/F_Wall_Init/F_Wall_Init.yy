@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "0_Base",
-    "path": "folders/01_Engine/World/0_Base.yy",
+    "name": "World_Wall",
+    "path": "folders/01_Engine/World/World_Wall.yy",
   },
   "resourceVersion": "1.0",
-  "name": "F_World_Init",
+  "name": "F_Wall_Init",
   "tags": [],
   "resourceType": "GMScript",
 }

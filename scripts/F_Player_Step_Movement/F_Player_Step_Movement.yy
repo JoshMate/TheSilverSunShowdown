@@ -3,10 +3,10 @@
   "isCompatibility": false,
   "parent": {
     "name": "0_Base",
-    "path": "folders/01_Engine/World/0_Base.yy",
+    "path": "folders/01_Engine/Player/0_Base.yy",
   },
   "resourceVersion": "1.0",
-  "name": "F_World_Init",
+  "name": "F_Player_Step_Movement",
   "tags": [],
   "resourceType": "GMScript",
 }
