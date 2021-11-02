@@ -2,7 +2,7 @@ function F_Config_Controls()
 {
 	
 	// Controller Globals
-	global.G_Controls_Controller_Config_Deadzone											= 0.50
+	global.G_Controls_Controller_Config_Deadzone											= 0.25
 	
 	
 	// Setup Controller Binds

@@ -27,17 +27,30 @@ function F_Player_Step_Controls()
 		
 		
 		// Resolve Joystick Directions
-		if (V_Player_Input_Move_Hor		< -global.G_Controls_Controller_Config_Deadzone) V_Player_Input_Move_Hor = -1
-		else V_Player_Input_Move_Hor = 0
+		// Horizontal
+		if 
+		(
+			V_Player_Input_Move_Hor		> -global.G_Controls_Controller_Config_Deadzone
+			and
+			V_Player_Input_Move_Hor		<  global.G_Controls_Controller_Config_Deadzone
+		) 
+		{
+			V_Player_Input_Move_Hor = 0
+		}
+		// Verticle
+		if 
+		(
+			V_Player_Input_Move_Ver		> -global.G_Controls_Controller_Config_Deadzone
+			and
+			V_Player_Input_Move_Ver		<  global.G_Controls_Controller_Config_Deadzone
+		) 
+		{
+			V_Player_Input_Move_Ver = 0
+		}
 		
-		if (V_Player_Input_Move_Hor		>  global.G_Controls_Controller_Config_Deadzone) V_Player_Input_Move_Hor = 1		 
-		else V_Player_Input_Move_Hor = 0
+
 		
-		if (V_Player_Input_Move_Ver			<  -global.G_Controls_Controller_Config_Deadzone) V_Player_Input_Move_Ver = -1
-		else V_Player_Input_Move_Ver = 0
-		
-		if (V_Player_Input_Move_Ver			>  global.G_Controls_Controller_Config_Deadzone) V_Player_Input_Move_Ver = 1
-		else V_Player_Input_Move_Ver = 0
+
 		
 		
 	}

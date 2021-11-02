@@ -51,8 +51,15 @@ function F_Player_Init()
 	V_Player_Stat_SP_Current													= V_Player_Stat_SP_Max
 	V_Player_Stat_SP_Current_Extra											= 0
 	
-	V_Player_Stat_Speed															= global.G_Player_Stat_Speed
-	V_Player_Stat_Speed_Extra													= 0
+	V_Player_Stat_AccelerationMult												= 1.0
+	V_Player_Stat_AccelerationMult_Extra										= 0
+	
+	V_Player_Stat_SpeedMult														= 1.0
+	V_Player_Stat_SpeedMult_Extra												= 0
+	
+	V_Player_Stat_DoubleJumpAmount											= 3
+	V_Player_Stat_DoubleJumpAmount_Extra								= 0
+	
 
 	V_Player_Stat_JumpHeight													= global.G_Player_Stat_JumpHeight
 	V_Player_Stat_JumpHeight_Extra											= 0
@@ -75,12 +82,25 @@ function F_Player_Init()
 	V_Player_Stat_ResitsMult_Range											= global.G_Player_Stat_ResistMult_Range
 	V_Player_Stat_ResistMult_Range_Extra									= 0
 	
+	// Values
+	V_Player_Velocity_X															= 0
+	V_Player_Velocity_Y															= 0
 	
 	// Counters
+	V_Player_Counter_Magnitude_Acceleration								= 0
+	V_Player_Counter_Magnitude_Gravity										= 0
+	V_Player_Counter_Magnitude_Friction										= 0
+	V_Player_Counter_DoubleJumpCount										= 0
+	
+
 	V_Player_Counter_Speed														= 0
+	V_Player_Counter_GravitySpeed											= 0
 	
 	// States
+	V_Player_State_Direction_Facing											= 0
+	V_Player_State_Direction_Facing_Previously							= 0
 	V_Player_State_Grounded														= 1
+	V_Player_State_HitHeadOnRoof												= 0
 	
 
 }
